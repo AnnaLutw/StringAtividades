@@ -1,0 +1,23 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi3 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("data: ");
+		String[] arrayData = ent.nextLine().trim().split("/");
+		String resultado = "Você nasceu em ";
+		String[] arrayMeses = {"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto","setembro", "outubro", "novembro", "dezembro"};
+		for(int i=0;i<arrayData.length;i++){
+				if(i==0) {
+					
+					resultado=resultado + arrayData[i];
+				}
+		}
+		System.out.print(resultado.trim());
+	}
+}

@@ -1,0 +1,27 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi6 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("Numero: ");
+		String numero = ent.nextLine();
+
+		char[] array = numero.toCharArray();
+		int tamanhoTel = array.length;
+		int tamanhoFinal = 9;
+		
+		if(numero.contains("-")) {
+			tamanhoFinal = 10;
+		}
+		while(tamanhoTel< tamanhoFinal) {
+				numero = 9 + numero;
+				tamanhoTel++;
+		}
+		System.out.println(numero);
+	}
+}

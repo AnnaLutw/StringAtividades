@@ -1,0 +1,34 @@
+package criarTextos;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ativi1 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		
+	//	List<String> fora = new ArrayList<String>(); 
+		
+	//	fora.add(new String("e", "do", "da", "dos", "das", "de", "di", "du"));
+		
+		String texto = new String();
+			
+		System.out.println("nome: ");
+		texto = ent.nextLine().toUpperCase().trim();
+		
+		for(char let = 0 ; let < texto.length(); let++) {
+			
+			if(texto.charAt(let) == 'e') {
+				
+				continue;									
+		}
+			else if(texto.charAt(let) == ' ') {
+				
+				System.out.println(texto.charAt(let+1));
+			}
+		}
+
+	}
+}

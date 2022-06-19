@@ -1,0 +1,32 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi1 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		String texto = new String();
+		char inicio = 0;
+		
+		System.out.println("Digite um nome completo");
+		texto = ent.nextLine();
+		texto.trim();
+				
+	//	String maiuscula = texto1.toUpperCase();
+		
+		for(char let = 0 ; let < texto.length(); let++) {
+			
+			if(texto.charAt(1)== ' ' ) {
+				inicio = texto.charAt(let);
+
+				
+			}
+		}
+		System.out.println(inicio);
+		
+	//	System.out.println(maiuscula);
+	}
+
+}

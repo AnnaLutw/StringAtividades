@@ -1,0 +1,40 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi4 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("Frase: ");
+		String frase = ent.nextLine();
+		char[] arrayCaracteres = frase.toCharArray();
+		boolean ispalindromo = true;
+		int indiceSemEspaco = 0;
+		char[] arrayCaracteresSemEspaco = new char[arrayCaracteres.length];
+
+		String resultado = frase;
+		for(int i = 0; i< arrayCaracteres.length;i++) {
+			if(arrayCaracteres[i]!= ' ') {
+				arrayCaracteresSemEspaco[indiceSemEspaco]= arrayCaracteres[i];
+				indiceSemEspaco++;
+			}
+		}
+			
+		for(int i=0;i<indiceSemEspaco;i++){
+				if(arrayCaracteresSemEspaco[i] != arrayCaracteresSemEspaco[indiceSemEspaco-i-1]) {
+					ispalindromo= false;	
+					break;
+				}				
+		}
+		if(ispalindromo) {
+				resultado= resultado+" é um palíndromo " ;
+		}
+		else{
+			resultado= resultado+" não é um palíndromo " ;
+		}
+		System.out.print(resultado);
+	}
+}

@@ -1,0 +1,28 @@
+package criarTextos;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ativi1 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+		List<String> fora = new ArrayList<String>(); 
+		String texto = new String();
+			
+		System.out.println("nome: ");
+		texto = ent.nextLine().toUpperCase().trim();
+		
+		for(char let = 0 ; let < texto.length(); let++) {
+			
+			if(texto.charAt(let) == fora) {
+				continue;									
+		}
+			else {
+				System.out.println(palavras[0]);
+			}
+		}
+
+	}
+}

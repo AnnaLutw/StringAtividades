@@ -1,0 +1,22 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("nome: ");
+		String[] arrayTexto = ent.nextLine().trim().split(" ");
+		String resultado = "";
+		for(int i=0;i<arrayTexto.length;i++){
+				if(!arrayTexto[i].trim().equals("")) {
+					
+					resultado=resultado + " " + arrayTexto[i].trim();
+				}
+		}
+		System.out.print(resultado.trim());
+	}
+}

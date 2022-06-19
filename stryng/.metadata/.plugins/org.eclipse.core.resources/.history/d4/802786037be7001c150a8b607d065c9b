@@ -1,0 +1,24 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi2 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+		String digit = new String();
+		char esp = ' ';
+		System.out.print("Digite um texto: ");
+		digit = ent.nextLine().toUpperCase();
+		
+		for(int i = 0;i< digit.length();i++) {
+			
+			if( i == esp+esp) {
+				i--;
+			}
+			System.out.println(digit.charAt(i));
+		}
+	}
+
+}

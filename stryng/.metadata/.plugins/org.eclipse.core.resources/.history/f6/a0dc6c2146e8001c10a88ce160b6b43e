@@ -1,0 +1,26 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi1 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+		
+
+		System.out.println("nome: ");
+		String[] arrayTexto = ent.nextLine().toUpperCase().trim().split(" ");
+		String iniciais = "";
+		for(int i=0;i<arrayTexto.length;i++){
+			if(arrayTexto[i]!= "E" && arrayTexto[i]!= "DO" && arrayTexto[i]!= "DA"&& arrayTexto[i]!= "DAS" && arrayTexto[i]!= "DE" && arrayTexto[i]!= "DI"&& arrayTexto[i]!= "DU") {
+				
+				iniciais=iniciais + arrayTexto[i].charAt(0);
+
+			}
+		}
+		
+		System.out.print(iniciais);
+
+		}
+	}
+

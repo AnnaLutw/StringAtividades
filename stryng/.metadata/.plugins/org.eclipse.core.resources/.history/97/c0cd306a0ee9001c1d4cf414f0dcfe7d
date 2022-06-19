@@ -1,0 +1,19 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi5 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("Numero: ");
+		String numero = ent.nextLine();
+
+		char[] array = numero.toCharArray();
+		int tamanhoTel = array.length;
+		
+		while()
+	}
+}

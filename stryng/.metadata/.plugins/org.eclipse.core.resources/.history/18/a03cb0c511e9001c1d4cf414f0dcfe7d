@@ -1,0 +1,26 @@
+package criarTextos;
+
+import java.util.Scanner;
+
+public class ativi8 {
+
+	public static void main(String[] args) {
+		Scanner ent = new Scanner(System.in);
+
+
+		System.out.println("Frase: ");
+		String frase = ent.nextLine().toUpperCase();
+		int quant = 3;
+		char [] array = frase.toCharArray();
+		
+		String [] alfa = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+		
+		
+		
+		
+		
+		System.out.println(codigo);
+		
+		
+	}
+}
